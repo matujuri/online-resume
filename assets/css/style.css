@@ -428,7 +428,7 @@
 /* デスクトップ (1025px以上) */
 @media (min-width: 1025px) {
   .header-content {
-    padding: 12rem;
+    padding: 10rem;
   }
 
   .cat-images {
