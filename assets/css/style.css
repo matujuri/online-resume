@@ -529,6 +529,49 @@
   }
 }
 
+/* 言語切替ボタン */
+.language-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.language-toggle a {
+  color: var(--gray-dark);
+  text-decoration: none;
+  padding: 2px 4px;
+  transition: all 0.3s ease;
+}
+
+.language-toggle a:hover {
+  color: var(--orange-primary);
+}
+
+.language-toggle a.active {
+  color: var(--orange-primary);
+  font-weight: 600;
+}
+
+.language-toggle .separator {
+  color: var(--gray-light);
+  font-size: 0.7rem;
+}
+
+/* レスポンシブ対応: モバイル */
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+  }
+}
+
 /* Footer */
 .footer {
   background-color: var(--gray-dark);

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>李静静 - 履歴書</title>
+    <title data-i18n="resume-page-title" data-ja="李静静 - 履歴書" data-en="Seisei Li - Resume">李静静 - 履歴書</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,34 +13,42 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="site-theme">
+
+      <!-- 言語切替ボタン -->
+      <div class="language-toggle">
+        <a href="#" id="lang-ja" class="active">日本語</a>
+        <span class="separator">|</span>
+        <a href="#" id="lang-en">English</a>
+      </div>
+
       <div class="container px-4 py-5">
         <header class="text-center mb-5">
           <h1 class="display-4 fw-bold text-body-emphasis wf-notosansjp">
             李静静
           </h1>
-          <p class="lead wf-notosansjp">エンジニア・ディレクター</p>
+          <p class="lead wf-notosansjp" data-i18n="resume-subtitle" data-ja="エンジニア・ディレクター" data-en="Engineer & Director">エンジニア・ディレクター</p>
         </header>
 
       <section class="summary mb-5">
-        <h2 class="pb-2 border-bottom wf-notosansjp">職務要約</h2>
+        <h2 class="pb-2 border-bottom wf-notosansjp" data-i18n="summary-title" data-ja="職務要約" data-en="Professional Summary">職務要約</h2>
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <p class="wf-notosansjp" style="margin: 0;">
+            <p class="wf-notosansjp" style="margin: 0;" data-i18n="summary-intro" data-ja="14年のプログラミング経験を持つエンジニア・ディレクターです。" data-en="Engineer and Director with 14 years of programming experience.">
               14年のプログラミング経験を持つエンジニア・ディレクターです。
             </p>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+              <li class="list-group-item" data-i18n="summary-point1" data-ja="2023年8月の退職後は、学習サービスやタスク管理ツールの開発とAIを活用したプログラミングに取り組んでいます。" data-en="Since retiring in August 2023, I have been developing learning services and task management tools, leveraging AI in programming.">
                 2023年8月の退職後は、学習サービスやタスク管理ツールの開発とAIを活用したプログラミングに取り組んでいます。
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" data-i18n="summary-point2" data-ja="GMOインターネット（2021-2023）ではWeb Hosting製品ディレクターとして、関係者と連携し、製品品質向上と新商材の提供を推進しました。" data-en="At GMO Internet (2021-2023), I served as Web Hosting Product Director, collaborating with stakeholders to improve product quality and introduce new offerings.">
                 GMOインターネット（2021-2023）ではWeb
                 Hosting製品ディレクターとして、関係者と連携し、製品品質向上と新商材の提供を推進しました。
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item" data-i18n="summary-point3" data-ja="インフォテック（2016-2021）ではエンジニアとして、保守開発から新規Webサービス（0→1）の企画・開発まで幅広く担当しました。" data-en="At Infotech (2016-2021), I worked as an engineer handling everything from maintenance to planning and developing new web services from scratch (0→1).">
                 インフォテック（2016-2021）ではエンジニアとして、保守開発から新規Webサービス（0→1）の企画・開発まで幅広く担当しました。
               </li>
             </ul>
-            <p class="wf-notosansjp">
+            <p class="wf-notosansjp" data-i18n="summary-goal" data-ja="これまでの経験を活かし、社会に良い影響を与える製品づくりに貢献したいと考えています。" data-en="I aim to leverage my experience to contribute to creating products that have a positive impact on society.">
               これまでの経験を活かし、社会に良い影響を与える製品づくりに貢献したいと考えています。
             </p>
           </div>
@@ -48,23 +56,23 @@
       </section>
 
       <section class="experience mb-5">
-        <h2 class="pb-2 border-bottom wf-notosansjp">職務経歴</h2>
+        <h2 class="pb-2 border-bottom wf-notosansjp" data-i18n="experience-title" data-ja="職務経歴" data-en="Work Experience">職務経歴</h2>
 
         <div class="job card mb-4">
           <div class="card-body">
-            <h3 class="card-title wf-notosansjp">GMOインターネット株式会社</h3>
-            <h6 class="card-subtitle mb-2 text-muted">
+            <h3 class="card-title wf-notosansjp" data-i18n="gmo-company" data-ja="GMOインターネット株式会社" data-en="GMO Internet, Inc.">GMOインターネット株式会社</h3>
+            <h6 class="card-subtitle mb-2 text-muted" data-i18n="gmo-period" data-ja="2021年10月 ～ 2023年08月" data-en="October 2021 - August 2023">
               2021年10月 ～ 2023年08月
             </h6>
-            <h5 class="text-primary wf-notosansjp">事業推進室 ディレクター</h5>
-            <p class="card-text wf-notosansjp">
+            <h5 class="text-primary wf-notosansjp" data-i18n="gmo-position" data-ja="事業推進室 ディレクター" data-en="Business Development Office, Director">事業推進室 ディレクター</h5>
+            <p class="card-text wf-notosansjp" data-i18n="gmo-description" data-ja="Web Hosting製品ディレクターとしてロードマップを策定し、マーケティング担当・ベトナム開発チーム・CS担当と連携し、製品品質向上を実現<br>有識者との協議を通じて、製品改善やビジネス観点でのデータ分析にノウハウを活用<br>新商材導入では社内外の関係者と積極的に調整し、スムーズな導入を推進" data-en="As Web Hosting Product Director, developed roadmaps and collaborated with marketing, Vietnam development team, and customer support to improve product quality<br>Leveraged expertise through discussions with specialists for product improvements and business-focused data analysis<br>Actively coordinated with internal and external stakeholders to smoothly introduce new offerings">
                 Web
                 Hosting製品ディレクターとしてロードマップを策定し、マーケティング担当・ベトナム開発チーム・CS担当と連携し、製品品質向上を実現<br>
                 有識者との協議を通じて、製品改善やビジネス観点でのデータ分析にノウハウを活用<br>
                 新商材導入では社内外の関係者と積極的に調整し、スムーズな導入を推進
             </p>
-            <h6 class="text-success">主な実績</h6>
-            <p class="card-text wf-notosansjp">
+            <h6 class="text-success" data-i18n="gmo-achievements-title" data-ja="主な実績" data-en="Key Achievements">主な実績</h6>
+            <p class="card-text wf-notosansjp" data-i18n="gmo-achievements" data-ja="システム監視指標の拡充と設定改善で不具合を事前予防、深夜メンテや問い合わせを大幅削減<br>ベトナム開発チームとワークフローを整理し、手戻りを削減" data-en="Expanded system monitoring metrics and improved configurations to prevent issues, significantly reducing late-night maintenance and inquiries<br>Streamlined workflows with Vietnam development team to reduce rework">
                 システム監視指標の拡充と設定改善で不具合を事前予防、深夜メンテや問い合わせを大幅削減<br>
                 ベトナム開発チームとワークフローを整理し、手戻りを削減
               </p>
@@ -74,17 +82,17 @@
 
         <div class="job card mb-4">
           <div class="card-body">
-            <h3 class="card-title wf-notosansjp">インフォテック株式会社</h3>
-            <h6 class="card-subtitle mb-2 text-muted">
+            <h3 class="card-title wf-notosansjp" data-i18n="infotech-company" data-ja="インフォテック株式会社" data-en="Infotech Co., Ltd.">インフォテック株式会社</h3>
+            <h6 class="card-subtitle mb-2 text-muted" data-i18n="infotech-period" data-ja="2016年02月 ～ 2021年09月" data-en="February 2016 - September 2021">
               2016年02月 ～ 2021年09月
             </h6>
-            <h5 class="text-primary wf-notosansjp">プロダクトソリューションG エンジニア</h5>
+            <h5 class="text-primary wf-notosansjp" data-i18n="infotech-position" data-ja="プロダクトソリューションG エンジニア" data-en="Product Solution Group, Engineer">プロダクトソリューションG エンジニア</h5>
 
             <div class="project mt-4">
-              <h4 class="text-info wf-notosansjp">
+              <h4 class="text-info wf-notosansjp" data-i18n="infotech-project1-title" data-ja="バックオフィス効率化SaaS（2018年10月 ～ 2021年09月）" data-en="Back-office Efficiency SaaS (October 2018 - September 2021)">
                 バックオフィス効率化SaaS（2018年10月 ～ 2021年09月）
               </h4>
-              <p class="card-text wf-notosansjp">
+              <p class="card-text wf-notosansjp" data-i18n="infotech-project1-desc" data-ja="Lean Startupの手法に基づいて、0-&gt;1の製品企画に初期メンバーとして参画<br>ユーザー調査、競合調査、プロトタイプの作成（Adobe XD、Figma）、フルスタック開発を担当<br>マルチテナント構成の技術検証や自動テストの推進などを実施" data-en="Joined as founding member for 0-to-1 product planning based on Lean Startup methodology<br>Responsible for user research, competitive analysis, prototyping (Adobe XD, Figma), and full-stack development<br>Conducted technical verification of multi-tenant architecture and promoted automated testing">
                 Lean
                 Startupの手法に基づいて、0->1の製品企画に初期メンバーとして参画<br>
                 ユーザー調査、競合調査、プロトタイプの作成（Adobe
@@ -92,21 +100,21 @@
                 マルチテナント構成の技術検証や自動テストの推進などを実施
               </p>
               <div class="alert alert-light">
-                <strong>技術スタック:</strong> Java(Spring Framework),
+                <strong data-i18n="tech-stack" data-ja="技術スタック:" data-en="Tech Stack:">技術スタック:</strong> Java(Spring Framework),
                 TypeScript(Vue.js), PostgreSQL
               </div>
             </div>
 
             <div class="project mt-4">
-              <h4 class="text-info wf-notosansjp">
+              <h4 class="text-info wf-notosansjp" data-i18n="infotech-project2-title" data-ja="帳票ツールの保守開発（2017年01月 ～ 2018年10月）" data-en="Report Tool Maintenance (January 2017 - October 2018)">
                 帳票ツールの保守開発（2017年01月 ～ 2018年10月）
               </h4>
-              <p class="card-text wf-notosansjp">
+              <p class="card-text wf-notosansjp" data-i18n="infotech-project2-desc" data-ja="サブバージョンアップの主要機能におけるバックエンドを担当<br>要件定義、開発、テスト、リリース準備を幅広く担当" data-en="Responsible for backend development of major features in sub-version updates<br>Handled wide range of tasks including requirements definition, development, testing, and release preparation">
                 サブバージョンアップの主要機能におけるバックエンドを担当<br>
                 要件定義、開発、テスト、リリース準備を幅広く担当
               </p>
               <div class="alert alert-light">
-                <strong>技術スタック:</strong> C++, Windows, Unix, Linux
+                <strong data-i18n="tech-stack" data-ja="技術スタック:" data-en="Tech Stack:">技術スタック:</strong> C++, Windows, Unix, Linux
               </div>
             </div>
           </div>
@@ -114,30 +122,19 @@
       </section>
 
       <section class="skills mb-5">
-        <h2 class="pb-2 border-bottom wf-notosansjp">経験・スキル</h2>
+        <h2 class="pb-2 border-bottom wf-notosansjp" data-i18n="skills-title" data-ja="経験・スキル" data-en="Experience & Skills">経験・スキル</h2>
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <!-- 経験セクション -->
             <div class="card mb-4">
               <div class="card-body">
-                <h3 class="card-title text-primary wf-notosansjp mb-3">経験</h3>
+                <h3 class="card-title text-primary wf-notosansjp mb-3" data-i18n="experience-subtitle" data-ja="経験" data-en="Experience">経験</h3>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="badge bg-primary fs-6 px-3 py-2 wf-notosansjp"
-                    >フルスタック開発</span
-                  >
-                  <span class="badge bg-success fs-6 px-3 py-2 wf-notosansjp"
-                    >企画推進</span
-                  >
-                  <span class="badge bg-info fs-6 px-3 py-2 wf-notosansjp"
-                    >社内外関係者との協働</span
-                  >
-                  <span
-                    class="badge bg-warning text-dark fs-6 px-3 py-2 wf-notosansjp"
-                    >海外開発チームの橋渡し</span
-                  >
-                  <span class="badge bg-secondary fs-6 px-3 py-2 wf-notosansjp"
-                    >データ分析</span
-                  >
+                  <span class="badge bg-primary fs-6 px-3 py-2 wf-notosansjp" data-i18n="exp-fullstack" data-ja="フルスタック開発" data-en="Full-stack Development">フルスタック開発</span>
+                  <span class="badge bg-success fs-6 px-3 py-2 wf-notosansjp" data-i18n="exp-planning" data-ja="企画推進" data-en="Project Planning">企画推進</span>
+                  <span class="badge bg-info fs-6 px-3 py-2 wf-notosansjp" data-i18n="exp-collaboration" data-ja="社内外関係者との協働" data-en="Internal & External Collaboration">社内外関係者との協働</span>
+                  <span class="badge bg-warning text-dark fs-6 px-3 py-2 wf-notosansjp" data-i18n="exp-bridge" data-ja="海外開発チームの橋渡し" data-en="Liaison with Offshore Teams">海外開発チームの橋渡し</span>
+                  <span class="badge bg-secondary fs-6 px-3 py-2 wf-notosansjp" data-i18n="exp-analysis" data-ja="データ分析" data-en="Data Analysis">データ分析</span>
                 </div>
               </div>
             </div>
@@ -145,30 +142,30 @@
             <!-- スキルセクション -->
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title text-primary wf-notosansjp">スキル</h3>
+                <h3 class="card-title text-primary wf-notosansjp" data-i18n="skills-subtitle" data-ja="スキル" data-en="Skills">スキル</h3>
                 <div class="row">
                   <div class="col-md-6">
-                    <h5 class="text-secondary wf-notosansjp">開発言語</h5>
+                    <h5 class="text-secondary wf-notosansjp" data-i18n="skills-languages" data-ja="開発言語" data-en="Programming Languages">開発言語</h5>
                     <p class="wf-notosansjp">
                       Java、TypeScript、C++、Python、Swift
                     </p>
 
-                    <h5 class="text-secondary wf-notosansjp">フレームワーク</h5>
+                    <h5 class="text-secondary wf-notosansjp" data-i18n="skills-frameworks" data-ja="フレームワーク" data-en="Frameworks">フレームワーク</h5>
                     <p class="wf-notosansjp">Spring Framework、Vue.js</p>
 
-                    <h5 class="text-secondary wf-notosansjp">データベース</h5>
+                    <h5 class="text-secondary wf-notosansjp" data-i18n="skills-databases" data-ja="データベース" data-en="Databases">データベース</h5>
                     <p class="wf-notosansjp">PostgreSQL</p>
                   </div>
                   <div class="col-md-6">
-                    <h5 class="text-secondary wf-notosansjp">インフラ</h5>
+                    <h5 class="text-secondary wf-notosansjp" data-i18n="skills-infrastructure" data-ja="インフラ" data-en="Infrastructure">インフラ</h5>
                     <p class="wf-notosansjp">AWS、GCP、Firebase、Docker</p>
 
-                    <h5 class="text-secondary wf-notosansjp">ツール</h5>
+                    <h5 class="text-secondary wf-notosansjp" data-i18n="skills-tools" data-ja="ツール" data-en="Tools">ツール</h5>
                     <div class="wf-notosansjp">
-                      <p><strong>開発：</strong>Git、VS Code（Cursor）</p>
-                      <p><strong>プロジェクト管理：</strong>Linear、Notion</p>
-                      <p><strong>コミュニケーション：</strong>Miro、Slack</p>
-                      <p><strong>デザイン：</strong>Adobe XD、Figma</p>
+                      <p><strong data-i18n="tools-development" data-ja="開発：" data-en="Development:">開発：</strong>Git、VS Code（Cursor）</p>
+                      <p><strong data-i18n="tools-project" data-ja="プロジェクト管理：" data-en="Project Management:">プロジェクト管理：</strong>Linear、Notion</p>
+                      <p><strong data-i18n="tools-communication" data-ja="コミュニケーション：" data-en="Communication:">コミュニケーション：</strong>Miro、Slack</p>
+                      <p><strong data-i18n="tools-design" data-ja="デザイン：" data-en="Design:">デザイン：</strong>Adobe XD、Figma</p>
                     </div>
                   </div>
                 </div>
@@ -179,29 +176,29 @@
       </section>
 
       <section class="qualifications mb-5">
-        <h2 class="pb-2 border-bottom wf-notosansjp">資格・語学</h2>
+        <h2 class="pb-2 border-bottom wf-notosansjp" data-i18n="qualifications-title" data-ja="資格・語学" data-en="Certifications & Languages">資格・語学</h2>
         <div class="row">
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="card-title text-primary wf-notosansjp">資格</h3>
+                <h3 class="card-title text-primary wf-notosansjp" data-i18n="certifications-subtitle" data-ja="資格" data-en="Certifications">資格</h3>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert1" data-ja="基本情報技術者（2016年5月）" data-en="Fundamental Information Technology Engineer (May 2016)">
                     基本情報技術者（2016年5月）
                   </li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert2" data-ja="日本語能力試験1級（2018年7月）" data-en="Japanese Language Proficiency Test N1 (July 2018)">
                     日本語能力試験1級（2018年7月）
                   </li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert3" data-ja="メンタルケア心理士（受講修了）（2024年11月）" data-en="Mental Care Counselor (Completed, November 2024)">
                     メンタルケア心理士（受講修了）（2024年11月）
                   </li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert4" data-ja="Coursera生成AI開発修了（2024年9月）" data-en="Coursera Generative AI Development (Completed, September 2024)">
                     Coursera生成AI開発修了（2024年9月）
                   </li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert5" data-ja="Courseraデータ解析修了（2024年6月）" data-en="Coursera Data Analysis (Completed, June 2024)">
                     Courseraデータ解析修了（2024年6月）
                   </li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="cert6" data-ja="日商簿記検定3級（2025年4月）" data-en="Bookkeeping Level 3 (April 2025)">
                     日商簿記検定3級（2025年4月）
                   </li>
                 </ul>
@@ -212,13 +209,13 @@
           <div class="col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="card-title text-primary wf-notosansjp">語学</h3>
+                <h3 class="card-title text-primary wf-notosansjp" data-i18n="languages-subtitle" data-ja="語学" data-en="Languages">語学</h3>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="lang1" data-ja="英語：TOEIC 885点（ビジネス使用経験2年）" data-en="English: TOEIC 885 (2 years business experience)">
                     英語：TOEIC 885点（ビジネス使用経験2年）
                   </li>
-                  <li class="list-group-item wf-notosansjp">中国語：母国語</li>
-                  <li class="list-group-item wf-notosansjp">
+                  <li class="list-group-item wf-notosansjp" data-i18n="lang2" data-ja="中国語：母国語" data-en="Chinese: Native">中国語：母国語</li>
+                  <li class="list-group-item wf-notosansjp" data-i18n="lang3" data-ja="日本語：ビジネスレベル" data-en="Japanese: Business Level">
                     日本語：ビジネスレベル
                   </li>
                 </ul>
@@ -229,15 +226,15 @@
       </section>
 
       <section class="self-pr mb-5">
-        <h2 class="pb-2 border-bottom wf-notosansjp">自己PR</h2>
+        <h2 class="pb-2 border-bottom wf-notosansjp" data-i18n="selfpr-title" data-ja="自己PR" data-en="Personal Statement">自己PR</h2>
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h4 class="card-title text-primary wf-notosansjp">
+                <h4 class="card-title text-primary wf-notosansjp" data-i18n="pr1-title" data-ja="技術・ビジネス・デザイン経験" data-en="Tech, Business & Design Experience">
                   技術・ビジネス・デザイン経験
                 </h4>
-                <p class="card-text wf-notosansjp">
+                <p class="card-text wf-notosansjp" data-i18n="pr1-desc" data-ja="エンジニアとしての技術力、ディレクションでのビジネス視点、デザイン理解の三軸を経験。これらを組み合わせ、幅広い課題に柔軟に対応し、価値を生み出せると考えています。" data-en="With experience in engineering, business direction, and design understanding, I can flexibly address diverse challenges and create value by combining these three perspectives.">
                   エンジニアとしての技術力、ディレクションでのビジネス視点、デザイン理解の三軸を経験。これらを組み合わせ、幅広い課題に柔軟に対応し、価値を生み出せると考えています。
                 </p>
               </div>
@@ -247,10 +244,10 @@
           <div class="col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h4 class="card-title text-primary wf-notosansjp">
+                <h4 class="card-title text-primary wf-notosansjp" data-i18n="pr2-title" data-ja="外国出身・多様な視点" data-en="Global Background & Diverse Perspectives">
                   外国出身・多様な視点
                 </h4>
-                <p class="card-text wf-notosansjp">
+                <p class="card-text wf-notosansjp" data-i18n="pr2-desc" data-ja="外国出身として異なる文化的視点を持ち、グローバルな交流にも積極的です。多様性を活かした新しい発想や橋渡し役としてチームに貢献できます。" data-en="As someone from abroad, I bring diverse cultural perspectives and actively engage in global interactions. I can contribute to teams with fresh ideas leveraging diversity and serve as a bridge.">
                   外国出身として異なる文化的視点を持ち、グローバルな交流にも積極的です。多様性を活かした新しい発想や橋渡し役としてチームに貢献できます。
                 </p>
               </div>
@@ -260,10 +257,10 @@
           <div class="col-lg-4">
             <div class="card h-100">
               <div class="card-body">
-                <h4 class="card-title text-primary wf-notosansjp">
+                <h4 class="card-title text-primary wf-notosansjp" data-i18n="pr3-title" data-ja="成長思考・改善志向" data-en="Growth Mindset & Continuous Improvement">
                   成長思考・改善志向
                 </h4>
-                <p class="card-text wf-notosansjp">
+                <p class="card-text wf-notosansjp" data-i18n="pr3-desc" data-ja="失敗や課題を学びの機会と捉え、改善に活かす姿勢を大切にしています。好奇心を持ち学び続け、常にwin-winの関係を意識しながら成果へつなげていきます。" data-en="I value treating failures and challenges as learning opportunities for improvement. With curiosity and continuous learning, I strive for results while always maintaining win-win relationships.">
                   失敗や課題を学びの機会と捉え、改善に活かす姿勢を大切にしています。好奇心を持ち学び続け、常にwin-winの関係を意識しながら成果へつなげていきます。
                 </p>
               </div>
@@ -275,7 +272,7 @@
 
     <!-- ホームページへの戻りボタン -->
     <div class="container px-4 py-3 text-center">
-      <a href="index.html" class="btn btn-outline-warning wf-notosansjp">
+      <a href="index.html" class="btn btn-outline-warning wf-notosansjp" data-i18n="back-button" data-ja="← ホームページに戻る" data-en="← Back to Home">
         ← ホームページに戻る
       </a>
     </div>
@@ -287,5 +284,7 @@
       </div>
     </footer>
 
+    <!-- 多言語対応スクリプト -->
+    <script src="./assets/js/i18n.js"></script>
   </body>
 </html>
