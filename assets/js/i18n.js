@@ -77,6 +77,10 @@ function updateLanguageToggle(lang) {
 
 // ページ読み込み時の初期化
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-dynamic-year]').forEach(function (el) {
+    el.textContent = String(new Date().getFullYear());
+  });
+
   const currentLang = getLanguage();
   updatePageLanguage(currentLang);
   updateLanguageToggle(currentLang);
