@@ -499,14 +499,23 @@
   color: var(--orange-primary);
 }
 
-.clickable-image {
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+#showcase .project-header {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
 }
 
-.clickable-image:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+#showcase .project-header h3 {
+  border-bottom: none;
+}
+
+#showcase .project-actions {
+  flex-shrink: 0;
+}
+
+#showcase .project-actions .btn:focus-visible {
+  outline: 2px solid var(--orange-primary);
+  outline-offset: 2px;
 }
 
 /* アニメーション */
@@ -556,7 +565,9 @@ html {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
 }
 
 .section-index--hidden {
@@ -607,7 +618,9 @@ html {
   font-weight: 500;
   padding: 0.15rem 0;
   border-radius: 6px;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .section-index-link:hover,
@@ -623,7 +636,10 @@ html {
   border-radius: 50%;
   background-color: var(--gray-light);
   box-shadow: 0 0 0 2px var(--gray-bg);
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .section-index-link.is-active .section-index-dot,
@@ -646,7 +662,10 @@ html {
   white-space: nowrap;
   text-align: right;
   line-height: 1.2;
-  transition: opacity 0.2s ease, max-width 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    max-width 0.2s ease,
+    visibility 0.2s ease;
 }
 
 .section-index-link.is-active .section-index-label,
@@ -676,7 +695,9 @@ html {
 
 .section-index--on-orange .section-index-label,
 .section-index--on-orange .section-index-link.is-active .section-index-label,
-.section-index--on-orange .section-index-link[aria-current="true"] .section-index-label {
+.section-index--on-orange
+  .section-index-link[aria-current="true"]
+  .section-index-label {
   color: #fff;
 }
 
@@ -690,7 +711,9 @@ html {
 }
 
 .section-index--on-orange .section-index-link.is-active .section-index-dot,
-.section-index--on-orange .section-index-link[aria-current="true"] .section-index-dot {
+.section-index--on-orange
+  .section-index-link[aria-current="true"]
+  .section-index-dot {
   background-color: #fff;
 }
 
