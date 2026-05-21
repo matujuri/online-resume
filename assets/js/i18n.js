@@ -63,7 +63,7 @@ function updatePageLanguage(lang) {
 function updateLanguageToggle(lang) {
   const jaBtn = document.getElementById('lang-ja');
   const enBtn = document.getElementById('lang-en');
-  
+
   if (jaBtn && enBtn) {
     if (lang === 'ja') {
       jaBtn.classList.add('active');
@@ -85,19 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
   updatePageLanguage(currentLang);
   updateLanguageToggle(currentLang);
   
-  // 言語切替ボタンのイベントリスナー
   const jaBtn = document.getElementById('lang-ja');
   const enBtn = document.getElementById('lang-en');
-  
+
   if (jaBtn) {
-    jaBtn.addEventListener('click', function(e) {
+    jaBtn.addEventListener('click', function (e) {
       e.preventDefault();
       setLanguage('ja');
     });
   }
-  
+
   if (enBtn) {
-    enBtn.addEventListener('click', function(e) {
+    enBtn.addEventListener('click', function (e) {
       e.preventDefault();
       setLanguage('en');
     });

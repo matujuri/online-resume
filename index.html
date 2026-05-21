@@ -15,12 +15,40 @@
   </head>
   <body class="site-theme">
 
-    <!-- 言語切替ボタン -->
     <div class="language-toggle">
       <a href="#" id="lang-ja" class="active">日本語</a>
       <span class="separator">|</span>
       <a href="#" id="lang-en">English</a>
     </div>
+
+    <nav class="section-index section-index--hidden" aria-label="ページ内ナビゲーション" aria-hidden="true">
+      <ol class="section-index-list">
+        <li>
+          <a href="#introduction" class="section-index-link" data-section="introduction">
+            <span class="section-index-label" data-i18n="nav-intro" data-ja="紹介" data-en="Intro">紹介</span>
+            <span class="section-index-dot" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#showcase" class="section-index-link" data-section="showcase">
+            <span class="section-index-label" data-i18n="nav-projects" data-ja="プロジェクト" data-en="Projects">プロジェクト</span>
+            <span class="section-index-dot" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="section-index-link" data-section="about">
+            <span class="section-index-label" data-i18n="nav-about" data-ja="私について" data-en="About">私について</span>
+            <span class="section-index-dot" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="section-index-link" data-section="contact">
+            <span class="section-index-label" data-i18n="nav-contact" data-ja="連絡先" data-en="Contact">連絡先</span>
+            <span class="section-index-dot" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ol>
+    </nav>
 
     <section id="header">
       <div class="header-content">
@@ -247,7 +275,7 @@
       });
     </script>
 
-    <!-- 多言語対応スクリプト -->
+    <script src="./assets/js/section-index.js"></script>
     <script src="./assets/js/i18n.js"></script>
   </body>
 </html>
