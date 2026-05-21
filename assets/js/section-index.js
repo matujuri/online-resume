@@ -13,14 +13,40 @@
   const header = document.getElementById('header');
   const orangeSections = ['showcase', 'contact'];
   var headerVisibleRatio = 1;
+  var labelsHideTimer = null;
+  var activeSectionId = null;
+  var LABEL_AUTO_HIDE_MS = 2000;
 
   if (!sections.length || !links.length || !nav) {
     return;
   }
 
+  function showIndexLabelsTemporarily() {
+    if (nav.classList.contains('section-index--hidden')) {
+      return;
+    }
+    nav.classList.add('section-index--labels-visible');
+    if (labelsHideTimer) {
+      clearTimeout(labelsHideTimer);
+    }
+    labelsHideTimer = setTimeout(function () {
+      nav.classList.remove('section-index--labels-visible');
+      labelsHideTimer = null;
+    }, LABEL_AUTO_HIDE_MS);
+  }
+
   function setNavVisible(visible) {
+    var wasHidden = nav.classList.contains('section-index--hidden');
     nav.classList.toggle('section-index--hidden', !visible);
     nav.setAttribute('aria-hidden', visible ? 'false' : 'true');
+    if (visible && wasHidden) {
+      showIndexLabelsTemporarily();
+    }
+    if (!visible && labelsHideTimer) {
+      clearTimeout(labelsHideTimer);
+      labelsHideTimer = null;
+      nav.classList.remove('section-index--labels-visible');
+    }
   }
 
   function updateNavVisibility() {
@@ -30,6 +56,11 @@
   }
 
   function setActiveSection(sectionId) {
+    if (sectionId !== activeSectionId) {
+      activeSectionId = sectionId;
+      showIndexLabelsTemporarily();
+    }
+
     links.forEach(function (link) {
       var match = link.getAttribute('data-section') === sectionId;
       if (match) {

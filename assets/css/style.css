@@ -668,8 +668,10 @@ html {
     visibility 0.2s ease;
 }
 
-.section-index-link.is-active .section-index-label,
-.section-index-link[aria-current="true"] .section-index-label {
+.section-index--labels-visible .section-index-link.is-active .section-index-label,
+.section-index--labels-visible
+  .section-index-link[aria-current="true"]
+  .section-index-label {
   max-width: 6.5rem;
   opacity: 1;
   visibility: visible;
