@@ -67,7 +67,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cat-image:hover {
+  .cat-image:hover,
+  .intro-image:hover {
     animation: none;
   }
 }
@@ -76,6 +77,11 @@
   width: 300px;
   height: auto;
   max-width: 100%;
+  transform-origin: center center;
+}
+
+.intro-image:hover {
+  animation: introImagePulseTwice 1.6s ease-in-out;
 }
 
 .project-image {
@@ -191,13 +197,16 @@
 /* Site-wide color theme */
 .site-theme {
   position: relative;
-  --orange-primary: #ff6b35;
-  --orange-light: #ff8c69;
-  --orange-dark: #e55a2b;
+  --orange-primary: #d97a52;
+  --orange-light: #e5a088;
+  --orange-dark: #c46845;
   --gray-primary: #6c757d;
   --gray-light: #adb5bd;
   --gray-dark: #495057;
-  --gray-bg: #f8f9fa;
+  --gray-bg: #f0e8e2;
+  --surface: #f7f2ed;
+  background-color: var(--gray-bg);
+  --bs-body-bg: var(--gray-bg);
 }
 
 /* Override Bootstrap colors for resume page */
@@ -271,6 +280,11 @@
 
 .site-theme .list-group-item:hover {
   background-color: var(--gray-bg);
+}
+
+#showcase .btn-light {
+  background-color: var(--surface);
+  border-color: var(--surface);
 }
 
 /* レスポンシブ対応 - モバイルファースト */
@@ -471,7 +485,7 @@
   padding: 20px;
   width: 90%;
   max-width: 800px;
-  background-color: white;
+  background-color: var(--surface);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: slideIn 0.3s ease;
@@ -555,6 +569,22 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes introImagePulseTwice {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
   }
 }
 
