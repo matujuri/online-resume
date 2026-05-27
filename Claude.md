@@ -10,7 +10,6 @@
 | パス | 責務 |
 |------|------|
 | `index.html` | トップ（ヘッダー、紹介、制作物ショーケース、About、連絡先） |
-| `resume.html` | 職務経歴書ページ |
 | `assets/css/style.css` | レイアウト・テーマ・レスポンシブ |
 | `assets/js/i18n.js` | `localStorage` と `data-i18n` / `data-ja` / `data-en` による日英切替 |
 | `assets/images/projects/` | 制作物サムネイル・アイコン |
