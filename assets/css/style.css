@@ -592,6 +592,44 @@ html {
   scroll-behavior: smooth;
 }
 
+/* パワポ風: スクロールでスライドが重なる（sticky stack） */
+.scroll-stack > section {
+  position: sticky;
+  top: 0;
+}
+
+.scroll-stack > #header {
+  z-index: 1;
+}
+
+.scroll-stack > #introduction {
+  z-index: 2;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.scroll-stack > #showcase {
+  z-index: 3;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.scroll-stack > #about {
+  z-index: 4;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.scroll-stack > #contact {
+  z-index: 5;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-stack > section {
+    position: relative;
+    top: auto;
+    box-shadow: none;
+  }
+}
+
 #introduction,
 #showcase,
 #about,
