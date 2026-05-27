@@ -62,6 +62,16 @@
   margin: 10px;
 }
 
+.cat-image:hover {
+  animation: catSpinOnce 1.4s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-image:hover {
+    animation: none;
+  }
+}
+
 .intro-image {
   width: 300px;
   height: auto;
@@ -536,6 +546,15 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes catSpinOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
